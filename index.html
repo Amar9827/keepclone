@@ -27,6 +27,25 @@
 		.lead{
 			font-size: 2rem;
 		}
+		ul{
+			list-style: none;
+			margin-top: 2rem;
+			border-top: 2px solid white;
+			display: none;
+		}
+		li{
+			border-bottom: 1px solid white;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+
+		input[type=checkbox]{
+			float: right;
+			height: 20px;
+			width: 20px;
+			border: 1px solid white;
+
+		}
 	</style>
 </head>
 <body>
@@ -44,6 +63,13 @@
 				  </div>
 				 
 				</form>
+			</div>
+			<div class="row">
+				<ul class="col-8 mx-auto">
+					<li>this is a todo item<input type="checkbox" aria-label="Checkbox for following text input"></li>
+					<li>this is a todo item<input type="checkbox" aria-label="Checkbox for following text input"></li>
+					<li>this is a todo item<input type="checkbox" aria-label="Checkbox for following text input"></li>
+				</ul>
 			</div>
 		</div>
 		</div>
