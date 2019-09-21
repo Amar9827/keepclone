@@ -49,3 +49,22 @@ body {
 .todo-item.checked {
     text-decoration: line-through;
 }
+
+input[type="checkbox"] {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+
+}
+
+.todoInput {
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+}
