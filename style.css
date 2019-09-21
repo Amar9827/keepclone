@@ -11,3 +11,15 @@ body {
             color: white;
             font-size: 1.5rem;
 }
+.removeText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 4px 15px;
+    display: inline;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+}
