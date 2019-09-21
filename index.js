@@ -58,3 +58,6 @@ class TodoList {
         this.todoList.innerHTML = todoElements.join(" ")
     }
 }
+if (document.readyState === "complete" || document.addEventListener) {
+    const List = new TodoList();
+}
