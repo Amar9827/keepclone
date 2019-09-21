@@ -7,4 +7,10 @@ class TodoList {
         this.removeButton = document.querySelector(".removeText");
         this.bindEvents();
     }
+  markTodo(id, isChecked) {
+        let obj = this.todos.get(id);
+        obj.checked = !isChecked;
+        this.todos.set(id, obj);
+        this.render();
+    }
 }
