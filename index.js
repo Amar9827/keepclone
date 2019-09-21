@@ -13,4 +13,13 @@ class TodoList {
         this.todos.set(id, obj);
         this.render();
     }
+  addTodo(text = "Blank Task") {
+        let id = Date.now() + "";
+        this.todos.set(id, {
+            id: id,
+            text: text,
+            checked: false
+        });
+        this.render();
+    }
 }
