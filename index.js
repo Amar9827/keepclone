@@ -7,6 +7,22 @@ class TodoList {
         this.removeButton = document.querySelector(".removeText");
         this.bindEvents();
     }
+  bindEvents () {
+        this.todoInput.onkeyup = (e) => {
+            if (e.keyCode ===13) {
+                this.addTodo(e.target.value);
+                this.todoInput.value = "";
+            }
+        }
+
+        this.todoList.onmouseup = (e) => {
+            if (e.target.checked !== undefined) {
+                let id = e.target.getAttribute("data-key");
+                this.markTodo(id, e.target.checked);
+            }
+        }
+        this.removeButton.onclick = this.clean.bind(this);
+    }
   markTodo(id, isChecked) {
         let obj = this.todos.get(id);
         obj.checked = !isChecked;
