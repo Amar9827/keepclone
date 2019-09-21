@@ -22,4 +22,12 @@ class TodoList {
         });
         this.render();
     }
+  clean() {
+        this.todos.forEach((todo, key) => {
+            if(todo.checked) {
+                this.todos.delete(key)
+            }
+        });
+        this.render();
+    }
 }
